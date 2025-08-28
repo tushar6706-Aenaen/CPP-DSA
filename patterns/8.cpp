@@ -3,22 +3,18 @@ using namespace std;
 
 int main()
 {
-    int n = 5;
-    int i = 1;
+    int n = 4;
+    int row = 1;
     
-    int j = 1;
-    while (i <= n)
+    while (row <= n)
     {
-        
-        while (j <= i)
-        {
-            
-            cout << j << " ";
-            j++;
+        int col = 1;
+        for(col=1 ; col<=row ;col++){
+            cout<<row-col+1<<" ";
         }
-        j = 1;
-        i++;
-        cout << endl;
+        row++;
+        cout<<endl;
     }
+
     return 0;
 }
