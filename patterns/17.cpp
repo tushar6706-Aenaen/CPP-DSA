@@ -12,8 +12,8 @@ int main()
         int col = n - row + 1;
         while (col)
         {
-            col--;
             cout << "*";
+            col--;
         }
         row++;
         cout << endl;
