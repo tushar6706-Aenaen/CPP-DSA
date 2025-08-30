@@ -9,10 +9,14 @@ int main()
 
     while (row <= n)
     {
-        int col = n - row + 1;
+        int col = n - row + 1; // 4-1+1 = 4  => 4321
+                               // 4-2+1 = 3  => 321
+                               // 4-3+1 = 2  => 21
+                               // 4-3+1 = 1  => 1
         while (col)
         {
             cout << "*";
+            // cout <<col;
             col--;
         }
         row++;
